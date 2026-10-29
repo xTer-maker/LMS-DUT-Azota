@@ -1,4 +1,4 @@
-# LMS-DUT-Azota
+# Solver Core V2 là một tiện ích pick đáp án tool LMS DUT & Azota 
 # Extension sử dụng API của Gemini, OpenAI để tự động pick đáp án và hoàn thành bài tập (Vibe coding)
 ## Lưu ý: Khuyên dùng Gemini với mô hình gemini-3.6-flash vì đc nhiều RPM Token
 # Hướng dẫn sử dụng:
