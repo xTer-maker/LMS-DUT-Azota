@@ -1,6 +1,6 @@
 # LMS-DUT-Azota
 # Extension sử dụng API của Gemini, OpenAI để tự động pick đáp án và hoàn thành bài tập (Vibe coding)
-## Lưu ý: Khuyên dùng Gemini với mô hình gemini-3.1-flash-lite vì đc nhiều RPM và
+## Lưu ý: Khuyên dùng Gemini với mô hình gemini-3.6-flash vì đc nhiều RPM Token
 # Hướng dẫn sử dụng:
   ## B1: Tải về và lưu với thư mục solver-core
   ## B2: Vào Manage Extensions trên Chrome hoặc Microsoft Edge, kích hoạt chế độ nhà phát triển (Developer Mode)
