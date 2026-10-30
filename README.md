@@ -1,8 +1,8 @@
-# ⚡ Solver Core V2
+# ⚡ Solver Core V3
 
 > **Tự động hóa & hỗ trợ giải bài tập thông minh trên LMS DUT & Azota bằng AI (Gemini / OpenAI).**
 
-Solver Core V2 là tiện ích mở rộng (Browser Extension) giúp tự động phân tích và chọn đáp án bài tập trên nền tảng **LMS DUT** và **Azota**. Dự án tích hợp các API ngôn ngữ lớn tiên tiến (Gemini, OpenAI) giúp tối ưu thời gian làm bài hiệu quả.
+Solver Core V3 là tiện ích mở rộng (Browser Extension) giúp tự động phân tích và chọn đáp án bài tập trên nền tảng **LMS DUT** và **Azota**. Dự án tích hợp các API ngôn ngữ lớn tiên tiến (Gemini, OpenAI) giúp tối ưu thời gian làm bài hiệu quả.
 
 ---
 
