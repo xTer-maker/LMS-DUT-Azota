@@ -71,7 +71,7 @@ Phiên bản **v3.2.0** mang đến những cải tiến vượt trội về cơ
 2. Điền thông tin cấu hình:
    * **Provider (Nhà cung cấp):** Chọn `Google Gemini`
    * **API Key:** Dán đoạn Key vừa sao chép vào
-   * **Model recommended:** `gemini-3.1-flash-lite` *(hoặc `gemini-3.6-flash` để tối ưu hạn mức RPM/Token)*
+   * **Model recommended:** `gemini-3.1-flash-lite` hoặc `gemini-3.5-flash-lite` *(được khuyến nghị để tối ưu hạn mức RPM/Token cao nhất)*
    * **Delay time:** Chỉnh thời gian hoãn chuyển câu hỏi mong muốn (mặc định 15s)
 3. Bấm **TEST KẾT NỐI** ➔ Khi hệ thống báo kết nối thành công, nhấn **LƯU CẤU HÌNH**.
 
@@ -79,10 +79,10 @@ Phiên bản **v3.2.0** mang đến những cải tiến vượt trội về cơ
 
 ## ⚠️ Lưu ý quan trọng & Khắc phục sự cố
 
-* **Khuyến nghị Model:** Ưu tiên sử dụng mô hình `gemini-3.1-flash-lite` hoặc `gemini-3.6-flash` để nhận hạn mức truy cập miễn phí (RPM / Token) cao nhất.
+* **Khuyến nghị Model:** Ưu tiên sử dụng mô hình **`gemini-3.1-flash-lite`** hoặc **`gemini-3.5-flash-lite`** để nhận hạn mức truy cập miễn phí (RPM / Token) cao nhất, tránh bị nghẽn API.
 * **Xử lý khi tool dừng chạy / Lỗi kết nối:**
   1. Nguyên nhân thường do API Key bị chạm giới hạn lượt truy cập trong ngày (Rate Limit) hoặc gián đoạn mạng. Khi đó, hệ thống sẽ tự hủy lệnh Next trang để bảo vệ bài làm.
-  2. Mở bảng điều khiển tiện ích, thử đổi tên **Model** sang `gemini-3.6-flash` hoặc tạo API Key mới từ Google AI Studio để thay thế.
+  2. Mở bảng điều khiển tiện ích, thử đổi tên **Model** sang `gemini-3.5-flash-lite` (hoặc `gemini-3.1-flash-lite`) hoặc tạo API Key mới từ Google AI Studio để thay thế.
   3. Kiểm tra lại kết nối mạng và đảm bảo đoạn API Key không bị dính khoảng trắng thừa.
 
 ---
