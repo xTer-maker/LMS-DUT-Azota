@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  body { width: 320px; font-family: 'Consolas', monospace; background: #0a0a0a; color: #00ffcc; padding: 15px; margin: 0; border: 2px solid #00ffcc; box-sizing: border-box; }
+  h3 { margin: 0 0 15px; font-size: 16px; letter-spacing: 2px; text-transform: uppercase; text-shadow: 0 0 5px #00ffcc; text-align: center;}
+  label { display: block; font-size: 12px; margin: 10px 0 5px; color: #88a; }
+  input, select { width: 100%; box-sizing: border-box; background: #111; border: 1px solid #00ffcc; color: #00ffcc; padding: 8px; border-radius: 3px; font-size: 13px; outline: none; }
+  input:focus, select:focus { box-shadow: 0 0 10px #00ffcc; }
+  button.btn { width: 100%; margin-top: 15px; padding: 10px; background: #00ffcc; color: #000; border: none; border-radius: 3px; font-weight: bold; cursor: pointer; text-transform: uppercase; transition: 0.3s; }
+  button.btn:hover { background: #0ff; box-shadow: 0 0 15px #0ff; }
+  .slider-container { display: flex; align-items: center; gap: 10px; margin-top: 10px; }
+  input[type="range"] { width: 100%; accent-color: #00ffcc; cursor: pointer; }
+  .range-val { font-weight: bold; color: #fff; width: 50px; text-align: right; font-size: 12px;}
+  .status { font-size: 12px; margin-top: 10px; padding: 8px; border-radius: 3px; text-align: center; display: none;}
+  .ok { border: 1px solid #0f0; color: #0f0; background: #001a00; }
+  .err { border: 1px solid #f00; color: #f00; background: #1a0000; }
+</style>
+</head>
+<body>
+  <h3>Solver Core V3</h3>
+  
+  <label>API Provider</label>
+  <select id="provider">
+    <option value="gemini">Google Gemini</option>
+    <option value="openai">OpenAI</option>
+    <option value="anthropic">Anthropic Claude</option>
+  </select>
+
+  <label>API Key (*)</label>
+  <input id="apiKey" type="password" placeholder="Nhập API Key...">
+
+  <label>Model (Tự động nhập)</label>
+  <input id="model" type="text" placeholder="VD: gemini-1.5-flash, gpt-4o-mini...">
+
+  <label style="margin-top: 15px; border-top: 1px solid #333; padding-top: 10px;">Chờ chọn đáp án (Giây)</label>
+  <div class="slider-container">
+    <input type="range" id="answerDelay" min="5" max="60" step="1" value="15">
+    <span class="range-val" id="answerVal">15s</span>
+  </div>
+
+  <label>Chờ chuyển câu - Next (Giây)</label>
+  <div class="slider-container">
+    <input type="range" id="nextDelay" min="5" max="60" step="1" value="60">
+    <span class="range-val" id="nextVal">60s</span>
+  </div>
+
+  <button class="btn" id="testBtn" style="background: #333; color: #00ffcc; border: 1px solid #00ffcc;">TEST KẾT NỐI</button>
+  <div id="status" class="status"></div>
+
+  <button class="btn" id="save">LƯU CẤU HÌNH</button>
+
+  <script src="popup.js"></script>
+</body>
+</html>
